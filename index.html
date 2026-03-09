@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luca Stringer</title>
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #27ae60;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Times, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            display: flex;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        /* Sidebar Navigation */
+        nav {
+            width: 250px;
+            background: var(--primary-color); 
+            color: white;
+            height: 100vh;
+            position: fixed;
+            padding: 20px;
+        }
+
+        nav h2 {
+            font-size: 1.2rem;
+            color: var(--accent-color); 
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 15px 0;
+        }
+
+        nav ul li a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: white;
+            padding-left: 10px;
+        }
+
+        /* Main Content Area */
+        main {
+            margin-left: 290px;
+            padding: 40px;
+            max-width: 900px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: -5px 0 15px rgba(0,0,0,0.05);
+        }
+
+        header {
+            border-bottom: 4px solid var(--accent-color);
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-top: 40px;
+            border-left: 5px solid var(--accent-color);
+            padding-left: 15px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        sup {
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+
+        /* References & Contact Section */
+        .footer-info {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+
+        .references {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .contact-box {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+
+        .contact-box h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            body { flex-direction: column; }
+            nav { width: 100%; height: auto; position: relative; }
+            main { margin-left: 0; padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <h2>Luca's Navigation</h2>
+    <ul>
+        <li><a href="#biography">About Luca</a></li>
+        <li><a href="#graphic-design">Graphic Design</a></li>
+        <li><a href="#academics">Academics</a></li>
+        <li><a href="#family">Family</a></li>
+        <li><a href="#contact">Contact Information</a></li>
+        <li><a href="#references">References</a></li>
+    </ul>
+</nav>
+
+<main>
+    <header>
+        <h1>Luca Stringer</h1>
+        <p><em>Student, Entrepreneur, and Creator</em></p>
+    </header>
+
+    <section id="biography">
+        <p>Luca Stringer is currently a student at Hampton Academy as of March, 2026. He owns a business<sup>[1]</sup> called <a href="https://lucasseacoastmarket.com" target="_blank">Luca's Seacoast Market, LLC</a>. He lives in New Hampshire<sup>[2]</sup>. The small town vibes of New Hampshire has shaped him greatly. Everything he needs is within a 20 minute walk. He owns a <a href="https://youtube.com/@lucaamadeusstringer" target="_blank">YouTube Channel</a><sup>[4]</sup> and he is building his digital empire one subscriber at a time. He loves to design graphics, make Maple Syrup, Garden, Repair Antique Mechanical clocks, and spend time with his family in his spare time. When he isn't doing anything he is plotting his next project. He loves working with his hands.</p>
+    </section>
+
+    <section id="graphic-design">
+        <h2>Graphic Design</h2>
+        <p>As I said above he loves to design graphics in his free time. He mainly uses Blender<sup>[5]</sup> to make his designs. Some of his more recent projects include his Rocking Chair, Folding Chair, and instructables Chair. You might have noticed a pattern, the chairs. He mostly creates his design to enter in contests. He uses a platform called Instructables<sup>[6]</sup> where you can submit your instructional text (hence the name) and win prizes, usually money. All of his projects of March 2026 are his Rocking Chair, Folding Chair, Instructables Chair, RC Plane, How To Make A Website With HTML, Dog Animation, 1970 Wall Decoration, Raspberry Pi Clock/Alarm/Stopwatch, Transverse Wave Experiment, How a Nuclear Reactor Works, Rowboat Animation, and his Cuckoo Clock. He is especially proud of his Rowboat Animation because it won a contest<sup>[7]</sup>. It won Luca $50. It's not a lot but it's something. He hopes to go onto a graphic and 3D design career path.</p>
+    </section>
+
+    <section id="academics">
+        <h2>Academics</h2>
+        <p>Luca Stringer is a very well educated student. He was home schooled for his whole life until he switched to public school when he was 6 years old. He took a test to determine what grade he would be put in when he was thrown into public school. He didn't score according to his grade in home school. He was placed in Kindergarten. The public school he went to was Greenland Central School<sup>[8]</sup> in the SAU 50 District. He stayed at that school until the fourth grade. He went to Adeline C. Marston School in the SAU 90 District<sup>[9]</sup> for the fifth grade. Then he did the switch to a middle school in the same district when he graduates Elementary School. He is currently going to Hampton Academy of the SAU 90 District<sup>[9]</sup>. His grades are spot on in all of his classes. He participates and is currently the producer of Shark News<sup>[10]</sup>. Shark News<sup>[10]</sup> is Hampton Academy's News Program. It is the largest middle school news program in New Hampshire. Luca Stringer is very developed when it comes to academics.</p>
+    </section>
+
+    <section id="family">
+        <h2>Family</h2>
+        <p>Luca Stringer's family is notable and supportive of his various endeavors. His Father is a Software engineer for NVIDIA. Thomas Stringer is remarkable when it comes to software; he owns a blog<sup>[11]</sup> and he posts frequently, sharing technical insights that have likely influenced Luca's own interest in digital creation. Luca Stringer has a Mother, Father, Sister, Step-Mother, and a Half-Brother, and the time spent between his Mother's and Father's homes has provided him with a broad perspective of the New Hampshire seacoast area. Luca Stringer is a notable person when it comes to Graphics, Business, and Academics, balancing his family life with a driven pursuit of his next big project.</p>
+    </section>
+
+    <div class="footer-info">
+        <section id="contact" class="contact-box">
+            <h3>Contact Luca</h3>
+            <p>If you would like to get in touch regarding business inquiries, graphic design projects, or collaborative efforts, please use the information below:</p>
+            <p><strong>Telephone:</strong> <a href="tel:9783780277">(978)-378-0277</a></p>
+            <p><strong>Email:</strong> <a href="mailto:lucastringer24@gmail.com">lucastringer24@gmail.com</a></p>
+        </section>
+
+        <section id="references" class="references">
+            <h3>References</h3>
+            <ol>
+                <li><a href="https://lucasseacoastmarket.com">"Luca's Seacoast Market"</a>. lucasseacoastmarket.com. Retrieved 2026-03-04.</li>
+                <li><a href="https://www.hamptonnh.gov">"Hampton, NH | Official Website"</a>. www.hamptonnh.gov. Retrieved 2026-03-04.</li>
+                <li><a href="https://www.strathamnh.gov">"Stratham, NH"</a>. www.strathamnh.gov. Retrieved 2026-03-04.</li>
+                <li><a href="https://www.youtube.com/@lucaamadeusstringer">"Luca Stringer"</a>. YouTube. Retrieved 2026-03-04.</li>
+                <li><a href="https://www.blender.org">"Blender - The Free and Open Source 3D Creation Software"</a>. Blender. Retrieved 2026-03-04.</li>
+                <li><a href="https://www.instructables.com">"Yours for the making"</a>. Instructables. Retrieved 2026-03-04.</li>
+                <li><a href="https://www.instructables.com/contest/makeitfloat25/">"Make it Float"</a>. Instructables. Retrieved 2026-03-04.</li>
+                <li><a href="https://gcs.sau50.org/en-US">"Home - Greenland Central School"</a>. Greenland Central School. Retrieved 2026-03-04.</li>
+                <li><a href="https://www.sau90.org">"SAU 90"</a>. www.sau90.org. Retrieved 2026-03-04.</li>
+                <li><a href="https://youtube.com/@sharknews-hamptonacademy780?si=oY5xuJcn2eo4u5VY">"Shark News"</a> - Hampton Academy". YouTube. Retrieved 2026-03-04.</li>
+                <li><a href="https://trstringer.com">"Thomas Stringer"</a>. Thomas Stringer. Retrieved 2026-03-04.</li>
+            </ol>
+        </section>
+    </div>
+</main>
+
+</body>
+</html>
