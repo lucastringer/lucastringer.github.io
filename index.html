@@ -7,6 +7,42 @@
     <title>Luca Stringer</title>
     <link rel="icon" type="image/x-icon" href="icon.ico">
     <style>
+        /* New section layout */
+        .bio-container {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .bio-text {
+            flex: 1;
+        }
+
+        /* Stationary image box with border and caption */
+        .image-box {
+            width: 250px;
+            border: 2px solid var(--accent-color);
+            padding: 10px;
+            background: #fff;
+            border-radius: 8px;
+            text-align: center;
+            flex-shrink: 0; /* Prevents the box from squishing */
+        }
+
+        .image-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .caption {
+            display: block;
+            margin-top: 8px;
+            font-size: 0.85rem;
+            color: #666;
+            font-style: italic;
+        }
         :root {
             --primary-color: #2c3e50;
             --accent-color: #27ae60;
