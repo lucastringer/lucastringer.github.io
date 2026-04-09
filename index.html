@@ -3,6 +3,7 @@
 <head>
     <link rel="canonical" href="https://lucastringer.com/" />
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luca Stringer</title>
     
@@ -23,31 +24,71 @@
   "datePublished": "2026-03-03"
 }
 </script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <style>
-         .image-box {
-    width: 500px !important; /* Increased from 250px */
+/* Layout for Bio: Text on left, Big Photo on right */
+.bio-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.bio-text {
+    flex: 1;
+}
+
+.image-box {
+    width: 500px !important; /* Makes the photo large as requested */
     border: 2px solid var(--accent-color);
     padding: 10px;
     background: #fff;
     border-radius: 8px;
     text-align: center;
-    flex-shrink: 0; 
+    flex-shrink: 0;
 }
-        /* New section layout */
-        .bio-container {
-            display: flex;
-            gap: 30px;
-            align-items: flex-start;
-            margin-bottom: 20px;
-        }
 
-        .bio-text {
-            flex: 1;
-        }
+.image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
 
+/* Floating Links Box in the far right white space */
+.floating-links {
+    position: fixed;
+    right: 25px; /* Adjust this to move it further into the white space */
+    top: 180px; 
+    width: 250px;
+    border: 2px solid var(--accent-color);
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 4px 4px 15px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 12px 0;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.link-item:hover {
+    color: var(--accent-color);
+}
+
+.link-item .material-symbols-outlined {
+    color: var(--accent-color);
+}
         /* Stationary image box with border and caption */
         .image-box {
-            width: 250px;
+            width: 500px;
             border: 2px solid var(--accent-color);
             padding: 10px;
             background: #fff;
@@ -202,6 +243,7 @@
             main { margin-left: 0; padding: 20px; }
         }
     </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
 
@@ -280,6 +322,34 @@
     </div> <footer style="text-align: center; padding: 20px; font-size: 0.8rem; color: #888;">
     <p>&copy; 2026 Luca Stringer | Published: March 3, 2026</p>
 </footer>
+<div class="floating-links">
+        <h3 style="margin-top:0; border-bottom: 2px solid var(--accent-color); padding-bottom: 5px;">Links</h3>
+        
+        <a href="https://youtube.com/@lucaamadeusstringer" class="link-item" target="_blank">
+            <span class="material-symbols-outlined">play_circle</span> YouTube
+        </a>
+
+        <a href="https://lucasseacoastmarket.com" class="link-item" target="_blank">
+            <span class="material-symbols-outlined">shopping_cart</span> Luca's Seacoast Market
+        </a>
+
+        <a href="https://www.facebook.com/people/Lucas-Seacoast-Market/61587370133486" class="link-item" target="_blank">
+            <span class="material-symbols-outlined">storefront</span> Luca's Seacoast Market Facebook
+        </a>
+
+        <a href="https://www.facebook.com/people/Luca-Stringer/61586879980028/" class="link-item" target="_blank">
+            <span class="material-symbols-outlined">person</span> Luca Stringer's Facebook
+        </a>
+
+        <a href="https://www.instructables.com/member/Luca+Stringer/" class="link-item" target="_blank">
+            <span class="material-symbols-outlined">build</span> Instructables
+        </a>
+
+        <a href="https://lucastringer.com/shortstories" class="link-item" target="_blank">
+            <span class="material-symbols-outlined">book</span> Luca Stringer's Short Stories
+        </a>
+    </div>
+</main>
 </main>
 
 </body>
