@@ -26,12 +26,30 @@
 </script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <style>
-/* Layout for Bio: Text on left, Big Photo on right */
-.bio-container {
-    display: flex;
-    gap: 40px;
-    align-items: flex-start;
-    margin-bottom: 40px;
+header {
+    display: flex;                /* Forces side-by-side layout */
+    justify-content: space-between; /* Pushes name left, box far right */
+    align-items: center;          /* Centers them vertically against each other */
+    border-bottom: 4px solid var(--accent-color);
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+}
+
+/* Ensure the title area doesn't take up 100% width */
+.header-title {
+    flex: 1; 
+}
+
+/* Your squished box from the last step */
+.header-link-box {
+    width: 500px; 
+    border: 2px solid var(--accent-color);
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.05);
+    flex-shrink: 0; /* Prevents the box from shrinking */
+    margin-left: 20px;
 }
 
 .bio-text {
@@ -54,37 +72,42 @@
     border-radius: 4px;
 }
 
-/* Floating Links Box in the far right white space */
-.floating-links {
-    position: fixed;
-    right: 25px; /* Adjust this to move it further into the white space */
-    top: 180px; 
-    width: 250px;
+/* The outlined box next to the title - now more compact */
+.header-link-box {
+    width: 500px; /* Slightly wider to accommodate two columns side-by-side */
     border: 2px solid var(--accent-color);
-    padding: 15px;
+    padding: 10px;
     background: white;
     border-radius: 8px;
-    box-shadow: 4px 4px 15px rgba(0,0,0,0.1);
-    z-index: 1000;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.05);
+    flex-shrink: 0;
 }
 
-.link-item {
+.header-link-box h3 {
+    margin: 0 0 8px 0;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 3px;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+/* This creates the 3-and-3 split */
+.link-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 5px 15px; /* Small gap between rows, larger gap between columns */
+}
+
+.header-link-box .link-item {
     display: flex;
     align-items: center;
-    gap: 12px;
-    margin: 12px 0;
+    gap: 6px;
     text-decoration: none;
     color: var(--text-color);
     font-weight: bold;
-    font-size: 0.9rem;
-}
-
-.link-item:hover {
-    color: var(--accent-color);
-}
-
-.link-item .material-symbols-outlined {
-    color: var(--accent-color);
+    font-size: 0.75rem; /* Slightly smaller text to fit comfortably */
+    white-space: nowrap; /* Prevents text from wrapping to a new line */
 }
         /* Stationary image box with border and caption */
         .image-box {
@@ -247,6 +270,8 @@
 </head>
 <body>
 
+<<body>
+
 <nav>
     <h2>Luca's Navigation</h2>
     <ul>
@@ -261,9 +286,45 @@
 
 <main>
     <header>
+    <div>
         <h1>Luca Stringer</h1>
         <p><em>Student, Entrepreneur, and Creator</em></p>
-    </header>
+    </div>
+
+    <div class="header-link-box">
+        <h3>Quick Links</h3>
+        
+        <div class="link-grid">
+            <a href="https://youtube.com/@lucaamadeusstringer" class="link-item" target="_blank">
+                <span class="material-symbols-outlined">play_circle</span> YouTube
+            </a>
+            <a href="https://www.facebook.com/people/Luca-Stringer/61586879980028/" class="link-item" target="_blank">
+                <span class="material-symbols-outlined">person</span> Luca Stringer's Facebook
+            </a>
+            <a href="https://lucasseacoastmarket.com" class="link-item" target="_blank">
+                <span class="material-symbols-outlined">shopping_cart</span> Luca's Seacoast Market
+            </a>
+            <a href="https://www.facebook.com/people/Lucas-Seacoast-Market/61587370133486" class="link-item" target="_blank">
+                <span class="material-symbols-outlined">storefront</span> Luca's Seacoast Market Facebook
+            </a>
+            <a href="https://www.instructables.com/member/Luca+Stringer/" class="link-item" target="_blank">
+                <span class="material-symbols-outlined">build</span> Instructables
+            </a>
+            <a href="https://www.pexels.com/@luca-stringer-2160735755/" class="link-item" target="_blank">
+                <span class="material-symbols-outlined">camera</span> Photography
+            </a>
+            <a href="https://lucastringer.com/shortstories" class="link-item" target="_blank">
+                <span class="material-symbols-outlined">book</span>  Luca Stringer's Short Stories
+            </a>
+        </div>
+    </div>
+</header>
+<section id="biography">
+        <div class="bio-container">
+            <div class="bio-text">
+            </div>
+            </div>
+    </section>
 
    <section id="biography">
         <div class="bio-container">
@@ -322,37 +383,7 @@
     </div> <footer style="text-align: center; padding: 20px; font-size: 0.8rem; color: #888;">
     <p>&copy; 2026 Luca Stringer | Published: March 3, 2026</p>
 </footer>
-<div class="floating-links">
-        <h3 style="margin-top:0; border-bottom: 2px solid var(--accent-color); padding-bottom: 5px;">Links</h3>
-        
-        <a href="https://youtube.com/@lucaamadeusstringer" class="link-item" target="_blank">
-            <span class="material-symbols-outlined">play_circle</span> YouTube
-        </a>
 
-        <a href="https://lucasseacoastmarket.com" class="link-item" target="_blank">
-            <span class="material-symbols-outlined">shopping_cart</span> Luca's Seacoast Market
-        </a>
-
-        <a href="https://www.facebook.com/people/Lucas-Seacoast-Market/61587370133486" class="link-item" target="_blank">
-            <span class="material-symbols-outlined">storefront</span> Luca's Seacoast Market Facebook
-        </a>
-
-        <a href="https://www.facebook.com/people/Luca-Stringer/61586879980028/" class="link-item" target="_blank">
-            <span class="material-symbols-outlined">person</span> Luca Stringer's Facebook
-        </a>
-
-        <a href="https://www.instructables.com/member/Luca+Stringer/" class="link-item" target="_blank">
-            <span class="material-symbols-outlined">build</span> Instructables
-        </a>
-    
-    <a href="https://www.pexels.com/@luca-stringer-2160735755/" class="link-item" target="_blank">
-            <span class="material-symbols-outlined">camera</span> Photography
-        </a>
-
-        <a href="https://lucastringer.com/shortstories" class="link-item" target="_blank">
-            <span class="material-symbols-outlined">book</span> Luca Stringer's Short Stories
-        </a>
-    </div>
 </main>
 </main>
 
